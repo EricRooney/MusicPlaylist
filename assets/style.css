@@ -1,0 +1,13 @@
+.SmallArt {
+  width: 100px;
+  max-height: 100px;
+}
+
+.cardWidth {
+  min-width: fit-content;
+}
+
+.redX {
+  color: red;
+  font-size: 2em;
+}

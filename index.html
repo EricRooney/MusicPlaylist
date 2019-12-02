@@ -9,7 +9,7 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="assets/style.css" />
-    <title>Music is Fun</title>
+    <title>Music is Fun - CopyPastaSucks</title>
   </head>
 
   <body class="container-fluid">
@@ -35,13 +35,33 @@
     <main class="row">
       <div class="col-6">
         <h3 class="text-center">Search Results</h3>
-        <div id="songs" class="col-12 m-0">
+        <div id="songResults" class="row m-0">
           <!-- template to generate -->
+          <div class="col-xs-3-12">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  src="https://images.pexels.com/photos/2872767/pexels-photo-2872767.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  alt="Album Art"
+                  style="max-height: 100px; max-width: 100px;"
+                />
+                <h3 class="card-title">"Artist -"</h3>
+                <h3 class="card-text">" Song"</h3>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  onclick="app.songsController.addSong('${this._id}')"
+                >
+                  Add Song
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-6">
         <h3 class="text-center">Playlist</h3>
-        <div class="col-12 m-0" id="playlist">
+        <div class="row m-0" id="playlist">
           <!-- template for playlist -->
         </div>
       </div>
